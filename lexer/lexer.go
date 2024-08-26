@@ -21,7 +21,7 @@ func (l *Lexer)readChar(){
 		l.ch = l.input[l.readPosition]
 	}
 	l.position = l.readPosition
-	l.readPosition++
+	l.readPosition+=1
 
 }
 func (l* Lexer) NextToken() token.Token{
@@ -29,8 +29,10 @@ func (l* Lexer) NextToken() token.Token{
 	switch l.ch{
 	case ':':
 		tok = newToken(token.COLON,l.ch)
-	case ';':
+	case ',':
 		tok = newToken(token.COMMA,l.ch)
+	case ';':
+		tok = newToken(token.SEMICOLON,l.ch)
 	case '(':
 		tok = newToken(token.LEFT_PARENTHESIS,l.ch)
 	case ')':

@@ -15,6 +15,7 @@ const (
 	RIGHT_PARENTHESIS    = ")"
 	COLON   = ":"
 	COMMA   = ","
+	SEMICOLON = ";"
 	STRING  = "STRING"
 	NUMBER  = "NUMBER"
 	ILLEGAL = "ILLEGAL"
