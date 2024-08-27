@@ -20,4 +20,6 @@ const (
 	NUMBER  = "NUMBER"
 	ILLEGAL = "ILLEGAL"
 	EOF     = "EOF"
+	IDENT = "IDENT" //identifiers + literals
+	INT = "INT"
 )
